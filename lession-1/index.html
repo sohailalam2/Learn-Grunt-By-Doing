@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+	<head>
+		<title>Title Page</title>
+		<meta charset="UTF-8">
+		<meta name=description content="Learn Grunt By Doing">
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="./build/css/production.min.css" rel="stylesheet" media="screen">
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="myHeader">Tutorial:</h1>
+			<div class="jumbotron">
+				<div class="container" ng-controller="MainController">
+					<h1 class="text-center">Learn Grunt By Doing</h1>
+					<div class="col-md-12 text-center">
+						<img ng-repeat="image in images" ng-src="{{image.src}}" alt="{{image.alt}}" height="250px" class="img img-rounded" style="padding-right:20px" ng-click="selectImage(image)"> 
+					</div>					
+				</div>
+			</div>
+		</div>
+
+		<script src="./build/js/production.min.js"></script>
+	</body>
+</html>
